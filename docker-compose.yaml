@@ -1,0 +1,34 @@
+version: '3.0' # specify docker-compose version
+ 
+# Define the services/ containers to be run
+services:
+ node: # name of the second service
+  build: DATA-LABELING-BACK-END # specify the directory of the Dockerfile
+  ports:
+  - "3000:3000" #specify ports mapping
+  volumes:
+  - upload-link:/usr/src/app/uploads/
+ angular: # name of the first service
+  build: DATA-LABELING-FRONT-END # specify the directory of the Dockerfile
+  ports:
+  - "4200:4200" # specify port mapping  
+
+ database: # name of the third service
+  image: mongo # specify image to build container from
+  environment:
+    #MONGO_INITDB_ROOT_USERNAME: unfraudedadmin
+    #MONGO_INITDB_ROOT_PASSWORD: password
+    MONGO_INITDB_DATABASE: data-labeling
+  ports:
+  - "27017:27017" # specify port forwarding
+  volumes:
+  - mongo-data:/data/db
+  
+ dextr: # name of the third service
+  build: DEXTR # specify the directory of the Dockerfile
+  ports:
+  - "5000:5000" # specify port mapping 
+ 
+volumes:
+ upload-link:
+ mongo-data:
