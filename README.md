@@ -11,14 +11,15 @@
  
 
 <div align="center">
-  <img src="./assets/images/login.png" width="220" />
-  <img src="./assets/images/home.png" width="250" />
-  <img src="./assets/images/home2.png" width="250" />
-  <img src="./assets/images/signup.png" width="220" />
-  <img src="./assets/images/home5.png" width="220" />
-  <img src="./assets/images/home4.png" width="250" />
-  <img src="./assets/images/home3.png" width="250" />
-  <img src="./assets/images/home6.png" width="220" />
+  <img src="./assets/images/login.png"  />
+  <img src="./assets/images/home.png" />
+  <img src="./assets/images/datasets.png"  />
+  <img src="./assets/images/gallery0.png"  />
+  <img src="./assets/images/gallery2.png"  />
+  <img src="./assets/images/gallery_add_image.png"  />
+  <img src="./assets/images/project0.png" />
+  <img src="./assets/images/project1.png" />
+  <img src="./assets/images/tag0.png" />
 
 </div>
 
